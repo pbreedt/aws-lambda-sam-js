@@ -1,0 +1,58 @@
+###
+POST https://reqres.in/api/users
+Content-Type: application/json
+Authorization: Bearer bla-blah-blah
+
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+
+### response
+{
+  "id": "505",
+  "createdAt": "2024-06-10T19:19:26.543Z"
+}
+
+###
+GET https://reqres.in/api/users/12
+
+### reponse:
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+    },
+    "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+    }
+}
+###
+POST https://dummy.restapiexample.com/api/v1/create
+Content-Type: application/json
+Authorization: Bearer bla-blah-blah
+
+{
+    "name":"James Dean",
+    "salary":"100,000",
+    "age":"30"
+}
+
+###
+GET https://dummy.restapiexample.com/api/v1/employees
+
+
+###
+POST https://httpbin.org/post
+Content-Type: application/json
+
+{
+    "name":"James Dean",
+    "salary":"100,000",
+    "age":"30"
+}
+
